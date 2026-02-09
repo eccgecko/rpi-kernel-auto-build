@@ -68,7 +68,7 @@ Key-Type: EDDSA
 Key-Curve: ed25519
 Name-Real: rpi-kernel-auto-build
 Name-Email: noreply@eccgecko.github.io
-Expire-Date: 0
+Expire-Date: 3y
 %commit
 EOF
 ```
