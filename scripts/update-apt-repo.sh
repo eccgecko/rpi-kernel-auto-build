@@ -10,8 +10,8 @@
 #
 set -euo pipefail
 
-DEB_DIR="${1:?Usage: update-apt-repo.sh <deb-dir> <repo-root> [builds-to-keep]}"
-REPO_ROOT="${2:?Usage: update-apt-repo.sh <deb-dir> <repo-root> [builds-to-keep]}"
+DEB_DIR="$(realpath "${1:?Usage: update-apt-repo.sh <deb-dir> <repo-root> [builds-to-keep]}")"
+REPO_ROOT="$(realpath "${2:?Usage: update-apt-repo.sh <deb-dir> <repo-root> [builds-to-keep]}")"
 KEEP_BUILDS="${3:-3}"
 
 POOL_DIR="${REPO_ROOT}/pool/main"

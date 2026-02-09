@@ -8,6 +8,15 @@ Built from the [`rpi-6.18.y`](https://github.com/raspberrypi/linux/tree/rpi-6.18
 
 The official `rpi-update --next` path installs bleeding-edge kernels but **does not provide kernel headers**. Without headers, DKMS modules (e.g. out-of-tree drivers) cannot be compiled. This project solves that by building both `linux-image` and `linux-headers` as `.deb` packages and publishing them via an apt repository.
 
+## Prerequisites
+
+These packages require **Raspberry Pi OS (Bookworm or later)** on a Pi 5. The `raspi-firmware` package must be installed (it is by default on Raspberry Pi OS) -- it provides the `/etc/kernel/postinst.d/z50-raspi-firmware` hook that copies the kernel image and device tree blobs to `/boot/firmware/` when a kernel `.deb` is installed.
+
+Verify with:
+```bash
+dpkg -l raspi-firmware
+```
+
 ## Install (Raspberry Pi 5)
 
 ```bash
@@ -39,7 +48,7 @@ uname -r
 2. Fetches the latest 20 commits on `raspberrypi/linux` `rpi-6.18.y`
 3. Finds the newest commit where **all** CI check-runs have passed
 4. Compares against the latest GitHub Release to avoid duplicate builds
-5. Cross-compiles the kernel for `arm64` with `bcm2712_defconfig` (Pi 5)
+5. Builds the kernel natively on an arm64 runner with `bcm2712_defconfig` (Pi 5)
 6. Produces `linux-image`, `linux-headers`, and `linux-libc-dev` `.deb` packages
 7. Creates a GitHub Release with the `.deb` files attached
 8. Updates the GitHub Pages apt repository with GPG-signed indexes
