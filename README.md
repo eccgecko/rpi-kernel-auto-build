@@ -64,8 +64,8 @@ sudo reboot
 ```bash
 gpg --batch --gen-key <<EOF
 %no-protection
-Key-Type: RSA
-Key-Length: 4096
+Key-Type: EDDSA
+Key-Curve: ed25519
 Name-Real: rpi-kernel-auto-build
 Name-Email: noreply@eccgecko.github.io
 Expire-Date: 0
