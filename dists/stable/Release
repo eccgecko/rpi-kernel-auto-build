@@ -1,0 +1,19 @@
+Architectures: arm64
+Codename: stable
+Components: main
+Date: Mon, 16 Feb 2026 07:31:22 +0000
+Label: Raspberry Pi Kernel Auto-Build
+Origin: rpi-kernel-auto-build
+Suite: stable
+MD5Sum:
+ d8aa4a00c655b035e689cb3ce5ca2a60             2275 main/binary-arm64/Packages
+ 08847771dbe3b63c173322153b8b6294              899 main/binary-arm64/Packages.gz
+SHA1:
+ bcedc560d87ac3c73160ec4aa8995953d7fc3ab8             2275 main/binary-arm64/Packages
+ 658a96df12cd578ac64783e837852500138b2b0f              899 main/binary-arm64/Packages.gz
+SHA256:
+ 7ab646abbb3a0a65ada50a017d49f9f8710683ae81b9affa5c65130347b45174             2275 main/binary-arm64/Packages
+ 482a7e351e94a3ec5a9deffad0ba077f90918438448ec3a40a535e2806ec463e              899 main/binary-arm64/Packages.gz
+SHA512:
+ 8cb21b727d177b836f6c2053dccfc495853f0754a49f189d13c24846d6558cbc7b444987e9a89337e07186275d255743a4a2d99eb517f79cca575e2a03610663             2275 main/binary-arm64/Packages
+ efe7e3a0a7b249adca87a3134f0b16bd3c8b81671e4007f9a8e9380a1849a50fef868889ac719f894605f7fbf5362739b388b8488f97ecf673b1aaf7de71d9c0              899 main/binary-arm64/Packages.gz

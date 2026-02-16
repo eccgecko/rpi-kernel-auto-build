@@ -1,0 +1,57 @@
+Package: linux-headers-6.18.10-v8-16k-rpi
+Source: linux-upstream
+Version: 6.18.10-1.1770983818
+Architecture: arm64
+Maintainer: runner <runner@runnervm95407.bjbvuqrj33guvfyt4atl1fpk3g.xx.internal.cloudapp.net>
+Installed-Size: 54572
+Filename: pool/main/linux-headers-6.18.10-v8-16k-rpi_6.18.10-1.1770983818_arm64.deb
+Size: 9391964
+MD5sum: 29fee9ed3b1aa0f38d89b924b47b937d
+SHA1: 596eef54ff503ad57be7162098f05415b0475d0c
+SHA256: bfce11b2c5957240200a11896e5e9ae4d84db7d7ff5929648417cab53ef0108e
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel headers for 6.18.10-v8-16k-rpi on arm64
+ This package provides kernel header files for 6.18.10-v8-16k-rpi on arm64
+ .
+ This is useful for people who need to build external modules
+
+Package: linux-image-6.18.10-v8-16k-rpi
+Source: linux-upstream
+Version: 6.18.10-1.1770983818
+Architecture: arm64
+Maintainer: runner <runner@runnervm95407.bjbvuqrj33guvfyt4atl1fpk3g.xx.internal.cloudapp.net>
+Installed-Size: 42308
+Filename: pool/main/linux-image-6.18.10-v8-16k-rpi_6.18.10-1.1770983818_arm64.deb
+Size: 32840230
+MD5sum: 7a81107490e8d629cc753816dac1f61f
+SHA1: e8ba43e74fb9cc421ea17212f8149c0a1838af34
+SHA256: 3343268c3a37b449fa2c50af83a3da44d5f2b29c7978656fda0adda6709c4cf4
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux kernel, version 6.18.10-v8-16k-rpi
+ This package contains the Linux kernel, modules and corresponding other
+ files, version: 6.18.10-v8-16k-rpi.
+
+Package: linux-libc-dev
+Source: linux-upstream
+Version: 6.18.10-1.1770983818
+Architecture: arm64
+Maintainer: runner <runner@runnervm95407.bjbvuqrj33guvfyt4atl1fpk3g.xx.internal.cloudapp.net>
+Installed-Size: 7439
+Provides: linux-kernel-headers
+Filename: pool/main/linux-libc-dev_6.18.10-1.1770983818_arm64.deb
+Size: 1488766
+MD5sum: 6305ab68f1ec81754a1885692e206673
+SHA1: 0a66772d023dbbaaec929c59c4edc885482a26b5
+SHA256: 4d3c619e386781b1f242b524a240d682848273157b722b6ae956edec2fab1795
+Section: devel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system libraries.
+
